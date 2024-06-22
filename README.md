@@ -1,3 +1,5 @@
+can you view this project here: https://duanlizcano-portfolio.netlify.app
+
 # Astro Starter Kit: Basics
 
 ```sh
