@@ -4,6 +4,12 @@ import NextJS from "./icons/Next.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Next.astro";
 import LinkButton from "./LinkButton.astro";
+import React from "./icons/React.astro";
+import Django from "./icons/Django.astro";
+import TypeScript from "./icons/TypeScript.astro";
+import MaterialUI from "./icons/MaterialUI.astro";
+import SQL from "./icons/SQL.astro";
+import AWS from "./icons/AWS.astro";
 
 const TAGS = {
   NEXT: {
@@ -16,6 +22,36 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  DJANGO: {
+    name: "Django",
+    class: "bg-[#003159] text-white",
+    icon: Django,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-[#003159] text-white",
+    icon: TypeScript,
+  },
+  MATERIALUI: {
+    name: "Material UI",
+    class: "bg-[#003159] text-white",
+    icon: MaterialUI,
+  },
+  SQL: {
+    name: "SQL",
+    class: "bg-[#003159] text-white",
+    icon: SQL,
+  },
+  AWS: {
+    name: "AWS",
+    class: "bg-[#003159] text-white",
+    icon: AWS,
+  },
 };
 const PROJECTS = [
   {
@@ -23,7 +59,14 @@ const PROJECTS = [
     description:
       "Plataforma de solicitud de créditos para motos, solicitud de credito a tu gusto, creacion de coutas, calculos de mora, pagos por diversos medios como: (payU, dlocal, wompi), envio de correos.",
     image: "img/capture_pick.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [
+      TAGS.REACT,
+      TAGS.DJANGO,
+      TAGS.TYPESCRIPT,
+      TAGS.MATERIALUI,
+      TAGS.SQL,
+      TAGS.AWS,
+    ],
     github: null,
     link: null,
   },
@@ -32,21 +75,28 @@ const PROJECTS = [
     description:
       "Platoforma de solicitud de prestamos, creacion de todo la estructura del front, consumimos la api de asodatos, creacion de cotizaciones, creacion de alidados y gerentes, diversos metodos de pago, envio de correos.",
     image: "img/capture_asodatos.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.DJANGO, TAGS.TYPESCRIPT, TAGS.MATERIALUI, TAGS.SQL],
   },
   {
     title: "DentiSalud - Platoforma de tratamientos dentales",
     description:
       "Platoforma de tratamientos dentales, creacion de profesionales, asignacion de tratamientos, creacion de cotizaciones, estadisticas, generacion de reportes, envio de reportes a la DIAN, generacion de facturas y recibos.",
     image: "img/capture_dentisalud.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.DJANGO, TAGS.TYPESCRIPT, TAGS.MATERIALUI, TAGS.SQL],
   },
   {
     title: "NUVOLIS - Platoforma de gestion de ventas",
     description:
       "Platoforma de gestion de ventas de cursos a colegios en toda latinoamerica, creacion de productos, creacion de clientes, creacion de vendedores, creacion de facturas, creacion de recibos, creacion de reportes, sistema de pagos, envio de correos.",
     image: "img/capture_nuvolis.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [
+      TAGS.REACT,
+      TAGS.DJANGO,
+      TAGS.TYPESCRIPT,
+      TAGS.MATERIALUI,
+      TAGS.SQL,
+      TAGS.AWS,
+    ],
   },
 ];
 ---
@@ -85,7 +135,7 @@ const PROJECTS = [
               ))}
             </ul>
 
-            <div class="mt-2 text-gray-700 dark:text-gray-400">
+            <div class="mt-2 text-gray-700 dark:text-gray-400 text-aling:fixed">
               {description}
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
